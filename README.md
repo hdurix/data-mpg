@@ -2,7 +2,7 @@
 Extrait &amp; envoie les joueurs de votre championnat MonPetitGazon
 
 ## Avant de commencer
-Modifier dans le fichier send-diff.sh les variables `__BOT_ID__`, `__CHAT_ID__` (Telegram) et `__LEAGUE_ID__` (MPG)
+Modifier dans le fichier send-diff.sh les variables `__BOT_ID__`, `__CHAT_ID__` (Telegram)
 
 ## Exemple d'utilisation
 Exemple d'appel de l'extracteur :
