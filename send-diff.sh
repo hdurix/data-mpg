@@ -2,6 +2,7 @@
 
 BOT_ID=__BOT_ID__
 CHAT_ID=__CHAT_ID__
+MPG_TOKEN=__MPG_TOKEN__
 LOG_FILE=/home/pi/java/mpg/log-extract.log
 
 function log {
@@ -25,7 +26,7 @@ FILENAME_DIFF=mpg-$1.diff
 FILENAME_CSV=mpg-$1.csv
 COUNTRY=$1
 
-java -jar extract.jar $FILENAME_CSV $2
+java -jar mpg-extract.jar $FILENAME_CSV $2 $MPG_MPG_TOKEN
 
 git diff -U0 $FILENAME_CSV | grep '^[+-]' | grep -Ev '^(--- a/|\+\+\+ b/)' > $FILENAME_DIFF
 
