@@ -19,6 +19,7 @@
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
+                    <outputDirectory>.</outputDirectory>
                     <appendAssemblyId>false</appendAssemblyId>
                     <archive>
                         <manifest>

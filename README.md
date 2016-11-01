@@ -27,7 +27,7 @@ Exemple crontab :
 ## Remarques
 Le premier appel à send-diff.sh peut renvoyer une erreur car le message envoyé à Telegram sera trop grand.
 
-Le code source du programme java est disponible de src, il peut être utilisé. Pour créer le .jar, lancez la commande suivante (le jar se trouvera dans le répertoire `target` :
+Le code source du programme java est disponible dans `src`, il peut être utilisé. Pour créer le .jar, lancez la commande suivante :
 ```
-mvn clean package
+mvn clean compile assembly:single
 ```
