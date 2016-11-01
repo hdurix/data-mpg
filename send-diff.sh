@@ -26,7 +26,7 @@ FILENAME_DIFF=mpg-$1.diff
 FILENAME_CSV=mpg-$1.csv
 COUNTRY=$1
 
-java -jar mpg-extract.jar $FILENAME_CSV $2 $MPG_MPG_TOKEN
+java -jar mpg-extract.jar $FILENAME_CSV $2 $MPG_TOKEN
 
 git diff -U0 $FILENAME_CSV | grep '^[+-]' | grep -Ev '^(--- a/|\+\+\+ b/)' > $FILENAME_DIFF
 
