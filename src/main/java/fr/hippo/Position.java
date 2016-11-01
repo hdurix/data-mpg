@@ -1,7 +1,7 @@
 package fr.hippo;
 
 /**
- * Created by hippo on 16/09/2016.
+ * Created by hippo on 16/09/2016
  */
 public enum Position {
     GARDIEN("1", "Gardien"),

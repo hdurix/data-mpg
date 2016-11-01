@@ -7,6 +7,7 @@ import com.sun.jersey.api.client.WebResource;
 
 import javax.ws.rs.core.MediaType;
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
@@ -39,8 +40,9 @@ public class Extraction {
     }
 
     public void writeInFile(String fileName, List<String> lines) {
+        Charset charset = Charset.forName("UTF-8");
         try {
-            Files.write(Paths.get(fileName), lines);
+            Files.write(Paths.get(fileName), lines, charset);
         } catch (IOException e) {
             e.printStackTrace();
         }
