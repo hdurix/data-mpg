@@ -12,6 +12,8 @@ public class Player {
     private String firstname;
     private String lastname;
     private String position;
+    private String ultraPosition;
+    private String teamid;
     private String price_paid;
 
     public String getId() {
@@ -53,8 +55,24 @@ public class Player {
     public void setPosition(String position) {
         this.position = position;
     }
+    
+    public String getUltraPosition() {
+		return ultraPosition;
+	}
 
-    public String getPrice_paid() {
+	public void setUltraPosition(String ultraPosition) {
+		this.ultraPosition = ultraPosition;
+	}
+
+	public String getTeamid() {
+		return teamid;
+	}
+
+	public void setTeamid(String teamid) {
+		this.teamid = teamid;
+	}
+
+	public String getPrice_paid() {
         return price_paid;
     }
 
