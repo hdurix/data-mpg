@@ -10,6 +10,8 @@ import java.util.stream.Collectors;
 public class Team {
     private String id;
     private String name;
+    private String president;
+    private String stadium;
     private ArrayList<Player> players;
 
     public String getId() {
@@ -28,7 +30,23 @@ public class Team {
         this.name = name;
     }
 
-    public ArrayList<Player> getPlayers() {
+    public String getPresident() {
+		return president;
+	}
+
+	public void setPresident(String president) {
+		this.president = president;
+	}
+
+	public String getStadium() {
+		return stadium;
+	}
+
+	public void setStadium(String stadium) {
+		this.stadium = stadium;
+	}
+
+	public ArrayList<Player> getPlayers() {
         return players;
     }
 
